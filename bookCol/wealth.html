@@ -1,0 +1,1043 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+ initial-scale=1.0"/>
+<title>economics</title>
+
+
+<link href='https://unpkg.com/boxicons@2.1.3/
+ css/boxicons.min.css' rel='stylesheet'>
+ <style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+    padding-left: 40%;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: rgb(192, 192, 192);
+}
+
+.container{
+	
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+	
+}
+
+:root{
+	--gradient:linear-gradient(to right,#008baa, #7e42a7, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
+}
+
+#more10, #more11, #more12, #more13, #more14, #more15, #more16, #more17, #more18,
+#more19{
+    display: none;
+	margin-bottom: 5%;
+	margin-top:5%;
+}
+
+.back-vid{
+	position:fixed;
+	right: 0;
+	bottom: 0;
+	left:0;
+	top:0;
+	z-index: -1;
+	mix-blend-mode: lighten;
+	height:100%;
+}
+
+header{
+	
+	display: flex;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100vw;
+	align-items: center;
+	justify-content:space-between;
+	height: 70px;
+	background-color:  rgba(255, 255, 255, 0.123);
+	backdrop-filter: blur(10px);
+	padding: 0 30px;
+	box-shadow: 0 0 15px #d7de7268;
+	z-index: 999;	
+	
+}
+
+.left{
+	
+	display: flex;
+	align-items: center;
+	
+}
+
+.left img{
+	width: 40px;
+	margin: 0 15px;
+    border-radius: 20px;
+}
+
+header ul{
+	
+	display: flex;
+	justify-content:space-between;
+	width: 30%;
+	padding: 15px 15px;
+	border-radius: 50px;
+	background-color: rgba(35, 35, 35, 0.30);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 10px #dec17265;
+	
+}
+
+header ul li{
+	
+	list-style: none;
+	
+}
+
+
+header ul a{
+	
+	text-decoration: none;
+	color:white;
+	font-weight: 700;
+	margin: 0 10px;
+	
+}
+
+.box-icons{
+	
+	display: flex;
+	gap: 40px;
+	
+}
+
+.box-icons a{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #727fde;
+	text-decoration: none;
+	color: lightgray;
+	border-radius: 50%;
+	transition: 0.3s;
+	
+}
+
+.box-icons a:hover{
+	
+	background-color: #464646;
+	color:black;
+	box-shadow: 0 0 15px #aaaaaa6f;
+	
+}
+
+
+.blackhole-box{
+
+	z-index: 1;
+	position: absolute;
+	top:clamp(0px, calc(55px - ((100vw - 400px) * 0.048)), 56px);
+	width: 100%;
+	justify-content:center;
+	mix-blend-mode: lighten;
+
+}
+
+.blackhole-box video{
+	width: 100%;
+	margin-top: -23.5%;
+	z-index: 1;
+	
+}
+
+.hero{
+	
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content:space-between;	
+	
+}
+
+.hero-info{
+	position: absolute;
+	left: 5%;
+}
+
+.hero-info .hero-info-title{
+	
+	color: #727fde;
+	padding: 8px 5px;
+	border: 1px solid #727fde77;
+	width: 240px;
+	background-color: #2200493d;
+	box-shadow: 0 0 5px #727fde88;
+	border-radius: 50px;
+    margin-top: 360px;
+	
+}
+
+.hero-info h1{
+	
+	font-size: 60px;
+	max-width:600px;
+	font-weight:700;
+	line-height: 70px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	
+}
+
+.hero-info p{
+	
+	max-width: 550px;
+	line-height: 25px;
+	margin-bottom: 40px;
+	font-size:20px;
+	
+}
+
+.hero-info button{
+	
+	color:white;
+	padding: 15px 35px;
+	border-radius: 10px;
+	border: 2px solid #5c5c5cb4;
+	background-color: #2e2e2e3d;
+	box-shadow: 0 0 5px #c0c0c084;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.hero-info button:hover{	
+	box-shadow: 0 0 15px #dbdbdb86;	
+}
+
+.gradient{
+	background: linear-gradient(to right,darkgreen, lightgreen, green, green, lightgreen, darkgreen, green);
+	background-size: 200%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate-gradient 2.5s linear infinite;
+	
+	
+}
+
+@keyframes animate-gradient{
+	to{
+		background-position:200%;
+	}
+	
+}
+
+.hero-vid-box{
+	
+	position: absolute;
+	right: 0;
+	
+}
+
+.hero-vid-box video{
+	margin-top: 360px;
+	height: 900px;
+    mix-blend-mode:lighten;
+	max-width: 500px;
+	
+}
+
+.scroll-down{
+	
+	height:50px;
+	width:30px;
+	border: 2px solid lightgrey;
+	position: absolute;
+	left: 48%;
+	bottom: 8%;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 0 0 15px rgba(211,211,211,0.477);
+	border-top:transparent;
+	border-left:transparent;
+	animation: scroll-down 2s ease-in-out infinite;
+	
+}
+
+
+
+
+
+
+.info-section{
+	
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	width: 80%;
+	margin-top: 100px;
+	
+}
+
+.section-title{
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 100px;
+}
+
+.info-cards{
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	width: 100%;
+	height:100%;
+	margin-top: 30px;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10%;
+	
+}
+
+.card{
+	
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	width: auto;
+	height: 40vh;
+	overflow:hidden;
+	border: 1px solid gray;
+	background-color: rgb(35,35,35);
+	border-radius:20px;
+    transition: 0.3s;
+	
+}
+
+.card img{
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.card h1{
+    position: absolute;
+    margin: 0;
+    bottom: 40%;
+    left: 5%;
+    font-size: 25px;
+    z-index: lightgray;
+}
+
+.card p{
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    z-index: 1;
+    max-width: 300px;
+    color: grey;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.card video{
+    margin-top:10%;
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+
+}
+
+.card button{
+   color:white;
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 2px solid #727fdeb4 ;
+	background-color: rgb(35,35,35);
+	box-shadow: 0 0 5px #727fde84;
+	cursor: pointer;
+	transition: 0.3s;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.card button:hover{	
+	box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+
+} 
+
+.card:hover{
+    box-shadow: 0 0 15px rgb(211, 211, 211, 0.5);
+}
+
+.card:nth-child(3){
+    grid-row: span 2;
+    height:83vh;
+}
+
+.card:nth-child(3) p{
+	bottom: 12;
+}	
+
+.card:nth-child(3) h1{
+	bottom: 21;
+}
+
+.card:nth-child(4){
+	grid-column: span 2;
+}
+
+.card:nth-child(4) p{
+	max-width: 650px;
+}
+
+.card:nth-child(4) h1{
+	bottom: 35%;
+}
+
+/*MP PROJECTS IMPORTANT*/
+.my-projects{
+
+	display: flex;
+	flex-direction: column;
+	gap:10%;
+	align-items: center;
+	position: relative;
+	width: 80%;
+	height:100vh;
+	margin-top: 200px;
+	margin-bottom: 700px;
+
+}
+
+.project-card{
+
+	display: flex;
+	width:100%;
+	height: 40%;
+	align-items:center;
+	justify-content:center;
+    margin-top: 5%;
+    margin-bottom:5%;
+
+}
+
+.project-vidbox{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	position: relative;
+	cursor: pointer;
+	min-width: 500px;
+	transition: 0.5s;
+	mix-blend-mode: normal;
+
+}
+
+.project-vidbox img{
+
+	width: fit-content;
+	max-width: 22rem;
+	min-width: 21rem;
+	max-height: 19rem;
+	box-shadow: 0 0 10px lightgray;
+	border-radius: 20px;
+	transition: 0.5s;
+	margin-top:0;
+	margin-bottom: 150px;
+
+}
+
+.project-vidbox img:hover{
+	box-shadow: 0 0 20px lightgray;
+}
+
+.project-info{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	width:50%;
+	padding-left: 10%;
+}
+
+.project-info h1{
+	width: 90%;
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 0px;
+	margin-top:0;
+	max-width:450px;
+}
+
+.project-info p{
+	width: 90%;
+	max-width: 400px;
+	min-width: 300px;
+	margin-bottom: 150px;
+
+}
+
+.project-info button{
+	color:green;
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 2px solid #727fdeb4;
+	background-color: rgb(20, 20, 20);
+	box-shadow: 0 0 5px #727fde84;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.project-info button:hover{	
+	box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+
+} 
+
+.autoBlur{
+	animation: autoBlurAnimation linear both;
+	animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation{
+	0%{
+		filter: blur(40px);
+		opacity:0;
+	}
+	35%, 65%{
+		filter:blur(0);
+		opacity:1;
+	}
+	100%{
+		filter:blur(40px);
+		opacity:0;
+	}
+	
+}
+
+.autoDisplay{
+	animation: autoDisplayAnimation both;
+	animation-timeline:view();	
+}
+
+@keyframes autoDisplayAnimation{
+	from{
+		filter:blur(10px);
+		transform: transparent(-200px) scale(0);
+		opacity:0.2;
+	}
+	5%{
+		opacity:1;
+		filter:blur(0);
+		transform: translate(0) scale(1);
+	}
+}
+
+.fadeInRight{
+	animation: fadeInAnimation both;
+	animation-timeline:view();
+}
+
+@keyframes fadeInAnimation{
+	0%{
+		opacity:0;
+		transform:translate(-500px) scale(0.2);
+		filter:blur(20px);
+	}
+	10%, 90%{
+		opacity:1;
+		transform:translate(0) scale(1);
+		filter:blur(0);
+	}
+	100%{
+		filter:blur(20px);
+	}
+
+}
+
+ .menu-icon{
+            font-size:30px;
+            cursor:pointer;
+            
+        }
+
+.slink,
+.blink{
+	text-decoration: none;
+	color: green;
+	display: block;
+}
+
+
+  .sidebar{
+            position: fixed;
+            right:0;
+            top:0;
+            bottom:70%;
+            width:80%;
+            background-color: rgba(20, 20, 20, 0.411);
+            backdrop-filter: 10px;
+            z-index:999;
+            box-shadow: 0 0 20px rgba(red, green, blue, 0.411);
+            border-bottom-left-radius: 60%;
+            width:0;
+            opacity:0;
+
+        }
+
+.close-icon{
+  font-size: 30px;
+  color:lightgrey;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-bottom:2rem;
+  padding-left: 40px;
+  margin-top:1em;
+}
+.sidebar  li {
+  padding-left: 20px;
+   list-style: none;
+ margin-bottom: 10px;
+}
+
+.sidebar  li a{
+  padding-left: 20px;
+  text-decoration: none;
+  margin-bottom:50px;
+  color: lightgrey;
+  font-weight:700;
+  font-size: 20px;
+  text-shadow: 0 0 15px rgba(230, 230, 230, 0411)
+}
+
+.sidebar.open-sidebar{
+  animation: openSidebarAnimation 1.5s forwards;
+}
+
+@keyframes openSidebarAnimation {
+  to{
+    width:80%;
+    opacity:1;
+    bottom:0;
+    border-radius: 0em;
+  }
+}
+
+.sidebar.close-sidebar{
+  animation: closeSidebarAnimation 1.5s forwards;
+}
+
+@keyframes closeSidebarAnimation {
+  from{
+    width:80%;
+    opacity:1;
+    bottom:0;
+    border-radius: 0em;
+  }
+  to{
+    width:0;
+    opacity:0;
+    bottom:0;
+    border-bottom-left-radius: 50%;
+  }
+}
+	 
+
+ 
+ </style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+
+
+ <video class="back-vid" id="back-vid"  loop autoplay muted  play-inline src="videos/black.mp4" type="video/mp4">
+ </video>
+ 
+ <header>
+ 
+  <div class="left">
+  
+    <img src="imagesslogo.png" alt="logo">
+    <h1><span style="color: #fdc200">Just</span><span style="color:black;">Code</span></h1> 
+    
+  </div> 
+  <div class="menu-icon">
+    <span class="gradient">MENU</span>
+    </div>
+  
+  
+ 
+  </div>
+ 
+ </header>
+ <div class="sidebar">
+        <div class="close-icon">
+         <span class="gradient">CLOSE</span>
+        </div>
+ <li>
+       <a   href= "https://ju5tbe.github.io/JU5TBE/justbooks/selfhelp.html">
+    SELF HELP 
+   </a> 
+   </li>
+ <li>
+<a  href="https://ju5tbe.github.io/JU5TBE/justbooks/extra.html">
+     EXTRA
+   </a>
+   </li>
+ <li>
+ <a  href="https://ju5tbe.github.io/JU5TBE/justbooks/coding.html">
+    CODING
+   </a> 
+   </li>
+   <li>
+    <a href="https://ju5tbe.github.io/JU5TBE/justbook/material.html">
+        MATERIAL
+    </a>
+    </li>
+<li>
+  <a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/justbooks/wisdom.html">
+    GENERAL WISDOM
+   </a> 
+     </li>
+     
+    
+      <li>     
+    <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/justbooks/philosophy.html ">
+             
+         PHILOSOPHY
+    </a>    
+    </li>
+
+    <li>
+    <a  class= "header_link" href="https://ju5tbe.github.io/JU5TBE/justbooks/psychology.html">
+              
+       PSYCHOLOGY
+   </a>    
+    </li>
+     
+     <li>
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/justbooks/home.html">
+       HOME
+    </a>    
+    </li>
+    
+      <li>
+    <div class= "header_catergories">
+     <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/justbooks/credit.html ">
+             
+       CREDITS
+    </a>   
+    </li>
+      
+    <li>
+      <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/justbooks/siba.html ">
+             
+       SIBA
+    </a>             
+    </li>
+ </div>
+	
+ <div class="blackhole-box">
+ <video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
+ </div>
+ <section class="hero">
+   <div class="hero-info autoBlur">
+      
+      
+      <h1><span class="gradient">MONEY MANAGEMENT +
+      </span> Sec<span class="gradient">tion
+      </span></h1>
+      <p>This section contains books by thinkers thinking about thinking,how to think and why they think.      
+ 
+      </p>
+      
+
+   <div class="hero-vid-box">
+     <video class="autoBlur" loop autoplay muted   play-inline src="videos/infoVid.mp4" type="video/mp4"></video>
+   </div>
+
+  
+ </section>
+ 
+ 
+ <section class="info-section">
+ 
+ <h1 class="section-title autoDisplay">
+  <span class="gradient">NOTICE BOARD</span>
+ </h1>
+ <div class="info-cards">
+
+  
+  
+  <div class="card">
+   <h1><span class="gradient">UPDATES</span></h1>
+   <p>new ui added </p>
+  
+  </div>
+ 
+  <div class="card">
+    <h1 class="section-title autoDisplay"><span class="gradient">Upcoming</span> </h1>
+    <p>More books</p>
+    <img src="imagess/grid4.png" alt="Profile pic"/>           
+  </div>
+ </div> 
+ </section>
+ <section class="my-projects">
+    <h1 class="section-title autoDisplay"><span class="gradient">BOOKS</span></h1>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="projectVideo1" src="imagess/zone.jpg">
+            <div class="project-info fadeInRight" >
+                <h1>TRADING IN THE <span class="gradient">ZONE</span></h1>
+                
+      <p>Trading in the zone is one of revolutionary books about trading,
+      it focuses on the mental aspectsof trading and their impact.
+      This is a must read if you want to trade,professionally gamble(yes thats a thing)
+       invest (basically if you are dealing with probabilities) or just nje<span id="dots25">...</span>
+      
+  <span id="more25"> 
+     
+  <span class="mc gradient"> Main concepts </span>
+   
+  <span class="point">
+     •Having high emotional intelligence mattters more than having an edge in
+             trading
+    </span> 
+  
+    <span class="point">
+     •Once you have created a strong trading method then you should maintain discipline
+             and follow its ruless accordingly
+    </span> 
+     
+    <span class="point">
+     •You have to consistently analyse (aka be AWARE) 
+             your performance both tradingwise and mentally 
+    </span>
+    
+    
+
+                <button><a class="blink" href="https://dokumen.pub/trading-in-the-zone-master-the-market-with-confidence-discipline-and-a-winning-attitude-hardcovernbsped-0735201447-9780735201446.html">
+      PDF</a>
+   </button>
+    <button><a class="slink" href="https://open.spotify.com/episode/6ghTWwjVv2YYVpbiRovLEq?si=2df1fec06f6e44a4">
+      AUDIOBOOK</a></button></span>
+   <button onclick="moreText25()" id="btn25">READ MORE</button>
+                 </p>
+            </div>            
+        </div>
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="projectVideo2" src="imagess/chef.jpg"></>
+            <div class="project-info fadeInRight" >
+                <h1>THE WEA<span class="gradient">LTH CHEF</span></h1>
+                <p> The wealth chef is a book that is similar to rich dad poor dad 
+                    but takes a cooking approach to explaining its concepts.COOL...ish<span id ="dots26">...</span>
+  
+  <span id="more26"> 
+     
+  <span class="point">
+     •BEING AWARE!!!!!!!! your spending habits is imporant in order to 
+     handle your finances and develop a solid plan for your finances
+    </span> 
+  
+    <span class="point">
+     •Once your plan is created, Make sure that you stick to the plan in
+      order for the compounding effect to help towards your financial goals(ties to the compound effect,atomic habits,the power of habit,rich dad poor dad etc)
+    </span> 
+     
+    <span class="point">
+     •your definition of wealth is important as it will shape your goals and how you plan to archieve those goals
+     (e.if wealth to you is defined as not having to work for a living then wealth to you is a good passive income)
+    </span>
+   
+
+ 
+  
+                <button>  <a class="blink" href="https://www.pdfdrive.com/the-wealth-chef-recipes-to-make-your-money-work-hard-so-you-dont-have-to-e194429754.html">PDF</a></button></span>
+   <button onclick="moreText26()" id="btn26">READ MORE</button>
+                </p>
+            </div>            
+        </div>
+
+    </div>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img class="projectVideo" src="imagess/poorDad.jpg">
+            <div class="project-info fadeInRight">
+                <h1><span class="gradient">RICH</span>DAD POOOR<span class="gradient">DAD</span> </h1>
+                <p> Rich dad poor dad (must read btw)is a book(moreso biography)
+about Robrert Kyosaki's childhood,the book shines a contrast 
+on how beliefs and discussions about money differ between rich 
+and poor families.<span id ="dots27">...</span>
+  
+  <span id="more27"> 
+     
+  <span class="mc gradient"> Main concepts </span>
+   
+   <span class="point">
+     •The book emphasizes understanding money like rich people do
+     do,it argues that the subject of money isn't really taught in schools 
+     and is something you have to consistently learn about yourself.
+    </span> 
+  
+    <span class="point">
+     •It also  brings a new definition of asset.Being that an asset brings
+     money while a liability takes money (e.g a house *if you dont rent it out* is a liability
+      since it consistently drains money from your wallet in maintainence).This means that 
+      to create wealth you must invest in assets while also taking calculated risks in the path of financial
+      freedom. 
+    </span> 
+     
+    <span class="point">
+     •
+    </span>
+    
+    
+   
+   
+            
+                <button><a class="blink" href="https://dokumen.pub/download/rich-dad-poor-dad-what-the-rich-teach-their-kids-about-money-that-the-poor-and-middle-class-do-not-1st-ebook-ed-075956132x-9780759561328-9780759591530-0759591539.html">
+      PDF</a></button><button><a class="slink" href="https://open.spotify.com/show/0BO7N6BxReK5xFLyzQzgst">AUDIOBOOK</a></button></span>
+   <button onclick="moreText27()" id="btn27">READ MORE</button>
+                </p>
+            </div>            
+        </div>
+    </div>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="projectVideo1" src="imagess/wizard.jpg">
+            <div class="project-info fadeInRight" >
+                <h1>MARKET<span class="gradient"> WIZARD</span> </h1>
+                <p>  This book contains interviews from some of the most successful traders
+    in the industry, in interview format<span id ="dots28">...</span>
+  
+  <span id="more28"> 
+     
+  <span class="point">
+     •The most important thing in trading 
+     (moreso in life overall)is risk management
+     aka(not losing all your money in a single trade)
+     (ties to trading in the zone and GAME THEORY)
+
+    </span> 
+  
+    <span class="point">
+     •Be a student for life,the market changes so always be learning
+     (kinda like life)
+
+    </span> 
+     
+    <span class="point">
+     •Don't be moody...(control your enmotions,lest they control you)
+     KINDA LIKE LIFE!(ties to a lot of philosophies....SOOOOO IMPORTANT)
+    </span>
+   
+    
+  
+  
+   
+  
+                 <button> <a class="blink" href="https://dokumen.pub/market-wizards-interviews-with-top-traders-0135560934.html">
+                        pdf</a>
+                 </button>  
+                 
+<button><a class="slink" href="https://open.spotify.com/episode/1wqHijIbZXgoRJuHee8dVn?si=496d6174a2434091">AUDIOBOOK</a>
+                 </button></span>
+   <button onclick="moreText28()" id="btn28">READ MORE</button>
+                </p>
+            </div>            
+        </div>
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="projectVideo2" src="imagess/psychologyOfMoney.jpg">
+            <div class="project-info fadeInRight" >
+                <h1>THE <span class="gradient">PSYCHOLOGY</span> OF <span class="gradient">MONEY</span></h1>
+                <p>IT is in the title really,kinda like RICH DAD and a good book 
+                    to learn about common misconceptions about money<span id ="dots29">...</span>
+  
+  <span id="more29"> 
+
+    <span class="mc gradient">Main Concepts</span>
+
+   <span class="point">
+     •Your daily actions determine your financial success 
+     (ties to rich dad poor dad),therefore small wise decisions daily overtime lead to wealth
+    </span> 
+  
+    <span class="point">
+     •Financial freedom is the ultimate form of wealth and
+    </span> 
+     
+    <span class="point">
+     •Understand the level of financial wealth comfortable to you
+     (the point where most of what you desire financially is reached....it differs)
+    </span>
+    
+                <button> <a class="blink" href="https://inspiredbyislam.wordpress.com/wp-content/uploads/2022/08/the-psychology-of-money-timeless-lessons-on-wealth-greed-and-happiness-morgan-housel-z-lib.org_.pdf">
+                        PDF</a></button></span>
+   <button onclick="moreText29()" id="btn29">READ MORE</button>
+                </p>
+            </div>            
+        </div>
+
+    </div>
+    
+   
+
+ </section>
+ 
+ 
+ 
+ 
+</div>
+<script src="app.js"></script>
+
+</body>
+
+</html>
