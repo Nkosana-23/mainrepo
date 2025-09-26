@@ -1,25 +1,32 @@
 use std::io;
 
-fn calc(a :i32, b: i32) -> i32{//Parameters with types ... could be explained more, return type after ->
-    //find out about if statements  //basically a turbocharged if else
-
-    //match statements + logic combination
-    let mut input = String::new(); //creates mut input var with with an empty string, mut is neccesary in this case
-    io::stdin().read_line(&mut input).unwrap(); //Reads a line of text from standard input and appends it to input.
-    symbol = input.trim();//Prints the user's input to the terminal, removing leading/trailing whitespace.
-    match symbol {  //basically a turbocharged if else
-        "+" => a + b, //implicit returns
+fn calc(a: i32, b: i32, symbol: &str) -> i32 {
+    match symbol {
+        "+" => a + b,
         "-" => a - b,
         "*" => a * b,
-        "/" => a / b,
-        _ => 0, // default case if no pattern matches
+        "/" => {
+            if b == 0 {
+                eprintln!("Division by zero"); // guard against div by zero
+                0
+            } else {
+                a / b
+            }
+        }
+        _ => {
+            eprintln!("Unknown operator: {}", symbol);
+            0
+        }
     }
+}
+
+
 
     //match statements
 
 }
 
-gn main() {
+fn main() {
     println!("Hello, world!");
     let x: i32 = 5; // let x which is an interger of 32 be = 5 (immutable)
     let mut y = 10; // let mutable y = 10
@@ -67,8 +74,14 @@ gn main() {
     //input statements
 
     //pulling from fn add
-    let result = calc(20, 80);//calls add, a = 20, b = 80 then runs the script
-    println("result: {}", result);
+    println!("Enter an operator (+, -, *, /):");
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("failed to read line");
+    let symbol = input.trim(); // &str without trailing newline
+
+    let result = calc(20, 80, symbol);
+    println!("Result: {}", result);
 
     //pulling from fn add
 
