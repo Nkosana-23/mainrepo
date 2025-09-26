@@ -1,0 +1,11 @@
+  //input statements
+    let mut input = String::new(); //creates mut input var with with an empty string, mut is neccesary in this case
+    io::stdin().read_line(&mut input).unwrap(); //Reads a line of text from standard input and appends it to input.
+    println!("You typed: {}", input.trim()); //Prints the user's input to the terminal, removing leading/trailing whitespace.
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
+
+    let command = input.trim(); // still a &str
+    println!("Command received: {}", command);
+    //input statements
