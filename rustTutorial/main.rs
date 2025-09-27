@@ -53,11 +53,11 @@ fn main() {
     //arrays
     let arr: [i32; 3] = [1, 2, 3]; // array of 3 i32 intergers
     let first = arr[0];
-    println("{}", first)
+    println!("{}", first);
     //arrays
 
     //slices
-    println("{}", &arr[1])
+    println!("{}", &arr[1]);
   //slices
     //Compound Data sets
 
