@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Const</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rock+Salt&family=Satisfy&family=Sedgwick+Ave&family=Tangerine:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/street-soul" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/nuixyber" rel="stylesheet">
+</head>
+
+<body>
+    <video preload="auto" loop autoplay muted id="tech_vid"  src="videos/tech.mp4"></video>
+    <video loop autoplay muted id="background_video"   src="videos/the background.mp4"></video>
+    <video preload="auto" loop autoplay muted id="richmf_vid"  src="videos/royal background.mp4"></video>
+     <video preload="auto" loop autoplay muted id="street_vid"  src="videos/inkstreet.mp4"></video>
+  <div class="container">
+    
+    <header class="main_header">
+    
+    </header>
+  
+    <section class="headerp2">
+      <div class="change_theme">
+        <button class="theme_btn">Theme</button>
+      </div>
+      <div class="searchbardiv">
+        <div class="search_icon"><span class="icon_color"><i class="bi bi-search searchicon"></i></span> </div><input class="searchbar"  placeholder="Searchbar">
+      </div>
+      <div class="topics">
+         <button class="topic_button">Topics <span class="icon_color"><i class="bi bi-chevron-down"></i></span></button>
+      </div>
+    </section>
+
+        <div class="open_menu">
+      <div class="close-icon">
+         <span class="gradient"><i class="bi bi-x-circle-fill"></i></span>
+        </div>
+      <div class="menu_projects">
+        <ul class="rtod"  onclick="rtod_function()"> Road To Dev </ul>
+      </div>
+      <div class="menu_techstack">
+        <ul class="rants"  onclick="rant_function()"> Rants </ul>
+      </div>
+        <div class="contact">
+        <ul class="reality" onclick="reality_function()"> Reality </ul>
+      </div>
+    </div>
+
+      <div class="open_menu1">
+      <div class="close-icon1">
+         <span class="gradient"><i class="bi bi-x-circle-fill"></i></span>
+        </div>
+      <div class="defualt">
+        <ul class="default_theme" onclick="setTheme('default')"> Default </ul>
+      </div>
+      <div class="royal">
+        <ul class="royalty_theme" onclick="setTheme('royalty')">
+          <img class="theme_image" src="images/crown.png" alt="Royalty"/> Royalty
+        </ul>
+      </div>
+      <div class="street">      
+        <ul class="street_theme" onclick="setTheme('street')">
+          <img class="theme_image" src="images/graffiti (1).png" alt="Street"/> Street
+        </ul>
+      </div>
+      <div class="tech">
+        <ul class="tech_theme" onclick="setTheme('tech')">
+          <img class="theme_image" src=images/microchip_5993171.png" alt="Tech"/> Tech
+        </ul>
+      </div>
+    </div>
+
+    <div class="cute_shitidk">
+    </div>
+   
+
+    <section class="footer">
+    <div class="my_links">
+      <div class="link">
+      <div>
+      <div class="about">
+      </div>
+      <div class="don't_know_what_this_will_be_for">
+      </div>
+    </div>
+    </section>
+    <div class="copyright">
+          <p>&copy; 2025 Const . All Rights Reserved.</p>
+    </div>
+   
+    
+   
+  </div>
+
+  <section class="blog">
+      
+       <div class="post_overview">
+        
+        <div class="blog_post">
+          <div class="title">
+            <div class="close-icontitle">
+             <span class="gradient"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+             Trust the System
+          </div>
+        </div>
+       
+        <div class="topic_n_timestamp">
+           
+          <div class="topic"> Advice </div>
+          <div class="timestamp"> 08/07/2025 12:50</div>
+        </div>
+       
+        <div class="blog_post_text">
+          Coding with intention is one of the most important aspects of being a sorftare dev. So I have an idea   
+        </div>
+          <div><button class="more_btn">Read More</button></div>
+       </div> 
+         
+    </section>
+    <section class="blog_rant">
+       
+       <div class="post_overview">
+        
+         <div class="blog_post">
+           <div class="title">
+            <div class="close-icontitle2">
+             <span class="gradient"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+           Title
+           </div>
+         </div>
+       
+         <div class="topic_n_timestamp">
+           
+           <div class="topic">Topic name </div>
+           <div class="timestamp"> 00:00</div>
+         </div>
+       
+         <div class="blog_post_text">
+          rant Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nisi delectus quas, eligendi non earum unde neque cupiditate, impedit, accusamus quisquam dolore pariatur nostrum? Tempora laudantium ab architecto! Delectus, ullam.
+         
+         </div>
+         <div><button class="more_btn2">Read More</button></div>
+       </div> 
+         
+    </section>
+    <section class="blog_rtod">
+       
+       <div class="post_overview">
+        
+         <div class="blog_post">
+           <div class="title">
+            <div class="close-icontitle3">
+             <span class="gradient"><i class="bi bi-x-circle-fill"></i> </span>
+            </div>
+           Title
+           </div>
+         </div>
+       
+         <div class="topic_n_timestamp">
+           
+           <div class="topic">Topic name </div>
+           <div class="timestamp"> 00:00</div>
+         </div>
+       
+         <div class="blog_post_text">
+           rtod Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nisi delectus quas, eligendi non earum unde neque cupiditate, impedit, accusamus quisquam dolore pariatur nostrum? Tempora laudantium ab architecto! Delectus, ullam.
+         
+         </div>
+          <div><button class="more_btn3">Read More</button></div>
+       </div> 
+         
+    </section>
+    <section class="full_blog">
+       <div class="full_post_overview">
+         <div class="full_blog_post">
+           <div class="full_title">
+           Title
+           </div>
+         </div>
+       
+         <div class="full_topic_n_timestamp">
+           <div class="full_topic">Topic name </div>
+           <div class="full_timestamp"> 00:00</div>
+         </div>
+       
+         <div class="full_blog_post_text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nisi delectus quas, eligendi non earum unde neque cupiditate, impedit, accusamus quisquam dolore pariatur nostrum? Tempora laudantium ab architecto! Delectus, ullam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nulla quasi officiis excepturi necessitatibus dignissimos? Adipisci optio recusandae commodi odio cumque, dignissimos dicta repellat saepe molestiae, quos, laudantium illum aliquam?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas quae eveniet numquam suscipit laudantium repudiandae provident nisi porro recusandae omnis corporis neque quasi, in officia libero, et labore minus.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae officiis necessitatibus praesentium ipsum doloremque, dicta ullam dolor placeat quisquam. Nam, minima maxime? Doloribus laborum est, ratione illum distinctio voluptatum.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magni architecto, voluptatibus maxime minima nam in laudantium dicta? Natus assumenda vel illo laborum dolor beatae dolorum repellendus ducimus corrupti ratione.
+          lorem
+         <button class="full_read_more">
+          Read Less
+         </button>
+         </div>
+       </div> 
+         
+       </div> 
+    </section>
+
+  <script src="blog.js"></script>
+</body>
+      </html>
+      
