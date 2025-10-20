@@ -20,4 +20,11 @@ fun main() {
 
     // Done!
     println("\nProgram complete. You’ve learned key Kotlin concepts!")
+    //when statement
+   val grade = when {
+       score >= 90 -> "A"
+       score >= 80 -> "B"
+       score >= 70 -> "C"
+       else -> "F"
+   }
 }
