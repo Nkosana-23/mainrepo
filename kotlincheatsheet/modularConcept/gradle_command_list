@@ -1,0 +1,41 @@
+🛠️ Basic Build Commands
+- gradle build — Compiles and builds the entire project.
+- gradle clean — Deletes the build directory.
+- gradle assemble — Assembles outputs without running tests.
+- gradle check — Runs all verification tasks (e.g., tests).
+- gradle test — Executes unit tests.
+- gradle run — Runs the main class (if using the application plugin).
+- gradle javadoc — Generates Javadoc documentation.
+
+📋 Task Management
+- gradle tasks — Lists available tasks.
+- gradle tasks --all — Lists all tasks including those from plugins.
+- gradle dependencies — Displays project dependencies.
+- gradle properties — Shows project properties.
+
+⚙️ Project Setup & Configuration
+- gradle init — Initializes a new Gradle project.
+- gradle wrapper — Generates Gradle wrapper scripts.
+- gradle help — Displays help information.
+
+🧪 Testing & Verification
+- gradle test — Runs tests.
+- gradle check — Runs all checks (tests, lint, etc.).
+- gradle build --scan — Creates a build scan for diagnostics.
+
+🚀 Advanced & Continuous Builds
+- gradle build --continuous — Watches for changes and rebuilds automatically.
+- gradle --daemon — Uses the Gradle daemon for faster builds.
+- gradle --offline — Builds without accessing the network.
+
+🧩 Plugin & Dependency Management
+- gradle dependencyInsight --dependency <name> — Shows details about a specific dependency.
+- gradle buildEnvironment — Displays build script dependencies.
+
+🧵 Kotlin-Specific Enhancements
+If you're using Kotlin DSL (build.gradle.kts), all these commands still apply. You can also:
+- Use kotlin("jvm") version "x.y.z" in your plugins block.
+- Run Kotlin compilation tasks like compileKotlin and compileTestKotlin.
+
+You can find more details in the Gradle CLI documentation or explore this Gradle Commands Cheat Sheet.
+Would you like help automating any of these commands or writing a custom Gradle task?
