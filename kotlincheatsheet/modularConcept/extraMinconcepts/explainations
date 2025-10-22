@@ -1,0 +1,42 @@
+String splitting and collection filtering functions
+- split — splits a String by a delimiter or Regex into a List<String>.
+- splitToSequence — like split but returns a Sequence for lazy processing large inputs.
+- substringBefore — returns substring before a delimiter.
+- substringAfter — returns substring after a delimiter.
+- chunked — breaks a String or Collection into fixed-size chunks.
+- windowed — produces overlapping windows from a Collection or CharSequence.
+- filter — keeps elements that satisfy a predicate.
+- filterNot — keeps elements that do not satisfy a predicate.
+- filterNotNull — removes nulls from a Collection<T?> producing List<T>.
+- filterIndexed — filter with access to element index.
+- filterIsInstance — keeps only elements of a given type.
+- partition — splits a collection into Pair<List<T>, List<T>> by predicate.
+- takeWhile / dropWhile — keep or drop prefix elements while predicate is true.
+- distinct / distinctBy — remove duplicates or deduplicate by a selector.
+
+Common predicate and string-check helpers like it.isNotBlank
+- isBlank — returns true if String is empty or only whitespace.
+- isNotBlank — opposite of isBlank.
+- isEmpty — true if length == 0.
+- isNullOrBlank — null-safe blank check for String?.
+- isNullOrEmpty — null-safe empty check for String?.
+- startsWith — checks prefix.
+- endsWith — checks suffix.
+- contains — checks substring presence or Regex match.
+- matches — Regex full-match check.
+- any — true if any elements satisfy predicate.
+- all — true if all elements satisfy predicate.
+- none — true if no elements satisfy predicate.
+- toIntOrNull / toDoubleOrNull — try parse numeric; returns null on failure.
+- firstOrNull / lastOrNull / singleOrNull — safe element retrieval returning null if not found or ambiguous.
+
+Mapping and nullable-transform helpers related to mapNotNull
+- map — transform every element to a result, may include nulls if mapper returns null.
+- mapNotNull — transform and drop null results, producing List of non-null values.
+- mapIndexed — transform with access to element index.
+- mapIndexedNotNull — index-aware transform that drops null results.
+- flatMap — transform each element to an Iterable and flatten into one list.
+- flatMapIndexed — index-aware flatMap.
+- mapValues — transform values in a Map without changing keys.
+- associateBy / groupBy — create maps using a selector from elements after mapping.
+- sequenceMap / sequence operations — apply map/mapNotNull lazily on Sequence.
