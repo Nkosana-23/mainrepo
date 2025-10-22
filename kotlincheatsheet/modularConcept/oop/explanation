@@ -1,0 +1,17 @@
+Object oriented concepts in Kotlin
+- Classes and primary constructors — define object blueprints and initialize properties.
+- Properties and methods — data and behavior belonging to classes.
+- Visibility modifiers — control access: public, private, protected, internal.
+- Inheritance and open keyword — extend classes; classes are final by default.
+- Abstract classes and methods — provide partial implementations for subclasses.
+- Interfaces — define contracts with default implementations.
+- Data classes — concise holders for immutable data with generated equals/hash/toString/copy.
+- Sealed classes — restricted class hierarchies for exhaustive when expressions.
+- Enum classes — fixed set of constants with optional properties and behaviour.
+- Companion objects and factory methods — static-like members and construction helpers.
+- Object singletons — single-instance objects with initialization.
+- Delegation and by keyword — delegate implementation to another object or property.
+- Secondary constructors and init blocks — additional initialization paths.
+- Backing fields and custom getters/setters — control property access logic.
+- Generics and variance — type-parameterized classes and in/out variance for safe subtyping.
+- Visibility with constructors — control who can instantiate a class.
