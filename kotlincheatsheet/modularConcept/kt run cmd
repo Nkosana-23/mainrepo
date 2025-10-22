@@ -1,0 +1,2 @@
+kotlinc nbasics.kt -include-runtime -d nbasics.jar
+java -jar nbasics.jar
