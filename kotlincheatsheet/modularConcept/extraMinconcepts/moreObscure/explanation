@@ -1,0 +1,25 @@
+Obscure Kotlin concepts worth knowing
+- Sequence — lazy collection pipeline for large data; operations like map/filter are evaluated only when terminal op runs.
+- Reified generics with inline — lets you use the actual type T at runtime inside a generic function by declaring the function inline and reified.
+- Inline classes and Value classes — lightweight wrappers around a single value that can be optimized away at runtime (@JvmInline value class).
+- Typealias — gives an alternate name to an existing type to improve readability for complex types.
+- Delegated properties — by lazy, Delegates.observable, and custom delegates allow property behaviour to be reused and encapsulated.
+- Context receivers — allow functions to require multiple implicit receivers in scope for cleaner DSLs and extension APIs.
+- Contracts — let you declare function behaviour to help the compiler with smart casts and flow analysis.
+- Tail recursion — tailrec enables certain recursive functions to be compiled into loops to avoid stack overflow.
+- Sealed interfaces and sealed classes — restrict inheritance to a fixed set of subtypes for exhaustive when expressions.
+- Type-safe builders and DSL markers — @DslMarker and receiver lambdas enable safe, readable domain-specific languages.
+- Variance annotations — out and in on generics control producer/consumer variance and type-safety with covariant/contravariant types.
+- Suspend functions and coroutines basics — suspend functions, CoroutineScope, launch and async for asynchronous code without blocking.
+- Flow and Channels — reactive streams (Flow) and lightweight communication primitives (Channel) for asynchronous streams.
+- Expect / Actual (multiplatform) — declare common APIs with expect and provide platform-specific actual implementations.
+- Reflection basics — ::class, KClass, memberProperties let you inspect types at runtime, but add overhead.
+
+Short notes on why these matter
+- Performance: Sequences, tailrec, inline/value classes and lazy delegates can change runtime and memory characteristics.
+- API design: Reified generics, variance, typealias, sealed types and DSL markers help design safer, clearer APIs.
+- Concurrency: Suspend, Flow, Channels and coroutines are essential for modern asynchronous Kotlin.
+- Multiplatform and interop: Expect/actual and inline/value classes affect how code shares across targets and interacts with Java.
+- Compiler assistance: Contracts and reified types give the compiler more information for safer code and smart casts.
+
+
