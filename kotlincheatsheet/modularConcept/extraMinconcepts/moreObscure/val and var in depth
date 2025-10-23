@@ -1,0 +1,7 @@
+val versus var and type declarations
+- val is read-only; var is mutable. Use val when the reference should not be reassigned and var when you need to reassign the property.
+- Type is usually inferred. If you write val x = 5 the compiler infers Int. You do not have to declare the type when you provide an initializer.
+- You must declare the type when there is no initializer. Example: val name: String or var count: Int are required if you don't assign a value at declaration.
+- You may declare a type to widen or constrain the static type. Example: val s: CharSequence = "text" exposes only CharSequence APIs even though the runtime object is a String.
+- You may declare a type for API clarity or interoperability. Public properties, overridden members, or platform-facing APIs commonly specify explicit types for readability and binary compatibility.
+- Immutability is shallow for objects. val list: MutableList<Int> prevents reassigning list but does not make the list contents immutable. Use immutable interfaces like List<T> or immutable data structures when you need deep immutability.
