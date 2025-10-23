@@ -1,3 +1,17 @@
+//Abstract functions
+//An abstract function is declared without a body inside an abstract class or interface and must be implemented by concrete subclasses.
+//External functions
+//An external function is declared with the external modifier to indicate its implementation is provided outside Kotlin (for example by native code or a JVM/JS library), so it has no Kotlin body.
+//Single-expression functions using =
+//A single-expression function uses = followed by an expression; the compiler infers the return type and the function body is that expression.
+
+
+
+
+
+
+
+
 // Abstract class example showing abstract function usage
 abstract class Greeter {                          // declare an abstract class named Greeter
   abstract fun greet(name: String): String       // declare an abstract function greet with no body to be implemented by subclasses
