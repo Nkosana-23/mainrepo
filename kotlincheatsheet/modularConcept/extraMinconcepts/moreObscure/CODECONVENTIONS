@@ -1,0 +1,43 @@
+Kotlin syntax conventions are a set of standardized rules and best practices that help developers write clean, readable, and consistent Kotlin code. These conventions are widely adopted across the Kotlin community and are officially documented by JetBrains and Google.
+Here’s a comprehensive summary of the most important Kotlin syntax conventions:
+
+📁 File and Structure Conventions
+- File names should match the class or function they contain.
+- Source files must be encoded in UTF-8.
+- One top-level declaration per file is preferred for clarity.
+
+🧾 Naming Conventions
+- Classes and interfaces: PascalCase → MyClass, UserProfile
+- Functions and properties: camelCase → calculateTotal(), userName
+- Constants: UPPER_CASE with underscores → MAX_COUNT
+- Test methods: use descriptive names → shouldReturnTrueWhenInputIsValid()
+
+🔧 Formatting and Braces
+- Braces go on the same line:
+if (x > 0) {
+    println("Positive")
+}
+- Indentation: 4 spaces (no tabs)
+- Line length: ideally ≤ 120 characters
+- Use blank lines to separate logical sections
+
+🧼 Whitespace Rules
+- No space before parentheses in function calls: doSomething()
+- One space after // in comments
+- No trailing whitespace at the end of lines
+
+🧠 Specific Constructs
+- Use val by default, var only when mutation is necessary
+- Prefer expression functions when possible:
+fun greet(name: String) = "Hello, $name"
+- Use type inference unless explicit types improve clarity
+- Avoid unnecessary !! (non-null assertion)
+- Use safe calls (?.) and Elvis operator (?:) for null handling
+
+🧪 Control Flow
+- Prefer when over if-else chains for multiple conditions
+- Use for (item in collection) instead of index-based loops when possible
+
+🧰 Tools and IDE Support
+- IntelliJ IDEA and Android Studio can auto-format code to match conventions
+- Enable inspections to catch formatting and naming issues
