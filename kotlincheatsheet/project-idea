@@ -1,0 +1,21 @@
+- Simple Calculator: Build a console-based calculator that handles addition, subtraction, multiplication, and division.
+- Number Guessing Game: Let the user guess a randomly generated number with hints.
+- To-Do List App (Console): Create a basic task manager using lists and loops.
+- Temperature Converter: Convert between Celsius, Fahrenheit, and Kelvin.
+- Palindrome Checker: Check if a string is a palindrome.
+- BMI Calculator: Input height and weight to calculate Body Mass Index.
+- Basic Login System: Validate username and password using simple logic.
+- Multiplication Table Generator: Print tables for any number up to a given range.
+- Day of the Week Finder: Input a date and return the day of the week.
+
+⚙️ Intermediate-Level Kotlin Projects
+These introduce object-oriented programming, collections, and file handling.
+- Contact Book: Store and manage contacts using classes and lists.
+- Quiz App: Create a multiple-choice quiz with scoring.
+- Expense Tracker: Track income and expenses with categories.
+- Student Grade System: Input marks and calculate grades using classes.
+- File Reader/Writer: Read and write data to a file using Kotlin I/O.
+- Simple Banking System: Simulate deposits, withdrawals, and balance checks.
+- Weather App (Mock Data): Display weather info using data classes and conditionals.
+- Task Reminder App: Schedule tasks and notify based on time (console simulation).
+- Inventory Management System: Track items, quantities, and prices.
